@@ -4,7 +4,7 @@
 
 api.func<-function(x){
 
-  rcon<-redcapConnection(url=""https://informatics.ctrsu.org/redcap_v6.13.1/API/",token=x)
+  rcon<-redcapConnection(url="https://informatics.ctrsu.org/redcap_v6.13.1/API/",token=x)
 
   labels<-exportMetaData(rcon)$field_name
 
